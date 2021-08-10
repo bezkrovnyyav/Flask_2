@@ -61,7 +61,7 @@ def goals(goal):
     for i in db:
         if goal in db[i]["goals"]:
             db_goal.append(db[i])
-    print(db_goal)
+    
     return render_template("goal.html", db=db_goal, goal=goal, gl=gl)
 
 
